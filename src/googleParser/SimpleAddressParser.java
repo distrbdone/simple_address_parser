@@ -43,7 +43,6 @@ public class SimpleAddressParser
         //The XML parsing libraries I know of I don't believe quite fit the "core Java only" so I went with this
         while ((readLine = reader.readLine()) != null && x < 3)
         {
-        	System.out.println(readLine);
         	if(readLine.contains("<formatted_address>"))
         	{
         		fa = readLine.substring(readLine.indexOf(">")+1, readLine.lastIndexOf("<"));
